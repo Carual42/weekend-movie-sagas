@@ -13,6 +13,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x]- make a MovieDetails component
 [x]- make a route to /details for MovieDetails
 []- make onClick in MovieList that lead to said MovieDetails
+[]- MovieDetails should GET details and genre from /api/movie
 []- MovieDetails should POST to the dom the following:
     []- title
     []- description
