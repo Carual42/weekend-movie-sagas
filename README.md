@@ -7,4 +7,13 @@
 Your project description goes here. What problem did you solve? How did you solve it?
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
-[]- set up database
+[x]- set up database
+[x]- get server running
+[x]- check out existing code
+[x]- make a MovieDetails component
+[]- make a route to /details for MovieDetails
+[]- make onClick in MovieList that lead to said MovieDetails
+[]- MovieDetails should POST to the dom the following:
+    []- title
+    []- description
+    []- image
