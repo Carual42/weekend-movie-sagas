@@ -11,7 +11,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 [x]- get server running
 [x]- check out existing code
 [x]- make a MovieDetails component
-[]- make a route to /details for MovieDetails
+[x]- make a route to /details for MovieDetails
 []- make onClick in MovieList that lead to said MovieDetails
 []- MovieDetails should POST to the dom the following:
     []- title
