@@ -17,3 +17,4 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
     []- title
     []- description
     []- image
+    []- genres
