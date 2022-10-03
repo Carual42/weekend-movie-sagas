@@ -76,6 +76,7 @@ const details = (state = [], action) => {
 
 // Used to record selected movie
 const selectedMovie = (state = '', action) => {
+    console.log('this is the payload', action.payload)
     if (action.type === 'SET_SELECTEDMOVIE') {
         return Number(action.payload);
     } else {

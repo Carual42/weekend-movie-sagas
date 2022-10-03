@@ -13,9 +13,11 @@ function MovieList() {
     }, []);
 
 
-    function detailsBtn (num) {
-        dispatch({type: 'SET_SELECTEDMOVIE', payload: num})
-        history.push('/details/${num}')
+    const detailsBtn = (id) => {
+        event.preventDefault();
+        console.log('this is id', id)
+        dispatch({type: 'SET_SELECTEDMOVIE', payload: id});
+        history.push('/details/${id}');
     }
 
     return (
@@ -28,7 +30,7 @@ function MovieList() {
                             <h3>{movie.title}</h3>
                             <img src={movie.poster} alt={movie.title}/>
                             <br />
-                            <button onClick={detailsBtn(movie.id)}>Details</button>
+                            <button onClick={() => detailsBtn(movie.id)}>Details</button>
                         </div>
                     );
                 })}
