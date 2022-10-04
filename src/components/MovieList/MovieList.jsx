@@ -16,8 +16,8 @@ function MovieList() {
     const detailsBtn = (id) => {
         event.preventDefault();
         console.log('this is id', id)
-        dispatch({type: 'SET_SELECTEDMOVIE', payload: id});
-        history.push('/details/${id}');
+        // dispatch({type: 'SET_SELECTEDMOVIE', payload: id});
+        history.push(`/details/${id}`);
     }
 
     return (
