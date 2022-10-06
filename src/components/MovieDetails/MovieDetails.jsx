@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
 function MovieDetails() {
 
@@ -8,6 +8,7 @@ function MovieDetails() {
     const dispatch = useDispatch();
     const details = useSelector(store => store.details);
     const genres = useSelector(store => store.selectedGenres)
+    const history = useHistory();
     // const selectedMovie = useSelector(store => store.selectedMovie);
     useEffect(() => {
         dispatch({ type: 'FETCH_DETAILS', payload: id });
@@ -28,6 +29,7 @@ function MovieDetails() {
                         </div>
                     );
                 })}
+                <button onClick={(event) => history.push('/')}>Movie List</button>
             </section>
         </main>
 
