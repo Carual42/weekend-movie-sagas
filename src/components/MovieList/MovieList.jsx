@@ -9,7 +9,9 @@ function MovieList() {
     const movies = useSelector(store => store.movies);
     // const index = useSelector(store => store.selectedMovie)
     useEffect(() => {
+        dispatch({ type: 'FETCH_GENRES' });
         dispatch({ type: 'FETCH_MOVIES' });
+        
     }, []);
 
 
